@@ -10,3 +10,10 @@
   background-color: green;
   position: absolute;
 }
+#bomb {
+  height: 32px;
+  width: 32px;
+  background-color: orange;
+  position: absolute;
+  display: none;
+}
