@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>bomberman</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
 
-  <body>
-    <div id="boardgame">
-      <div id="player"></div>
-      <div id="bomb"></div>
-    </div>
+<head>
+  <meta charset="utf-8">
+  <title>bomberman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <script src="player.js"></script>
-    <script src="bomb.js"></script>
-  </body>
+<body>
+  <div id="board">
+    <div id="player"></div>
+    <div id="bomb"></div>
+    <div class="blast" id="blastCenter"></div>
+    <div class="blast" id="blastTop"></div>
+    <div class="blast" id="blastBottom"></div>
+    <div class="blast" id="blastLeft"></div>
+    <div class="blast" id="blastRight"></div>
+  </div>
+
+  <script src="player.js"></script>
+  <script src="bomb.js"></script>
+</body>
 
 </html>
