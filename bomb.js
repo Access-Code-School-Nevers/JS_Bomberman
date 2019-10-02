@@ -34,38 +34,44 @@ function bombBlast() {
   blastCenter.style.left = bomb.offsetLeft + "px";
     if (bomb.offsetTop == positionTop && bomb.offsetLeft == positionLeft){
     player.style.display = "none";
-  }
+    modal.style.display = "block";
 
+  }
 
   blastTop.style.display = "block";
   blastTop.style.top = bomb.offsetTop - 32 + "px";
   blastTop.style.left = bomb.offsetLeft + "px";
   if (bomb.offsetTop - 32 == positionTop && bomb.offsetLeft == positionLeft){
   player.style.display = "none";
-  }
+  modal.style.display = "block";
 
+  }
 
   blastBottom.style.display = "block";
   blastBottom.style.top = bomb.offsetTop + 32 + "px";
   blastBottom.style.left = bomb.offsetLeft + "px";
   if (bomb.offsetTop + 32 == positionTop && bomb.offsetLeft == positionLeft){
   player.style.display = "none";
-  }
+  modal.style.display = "block";
 
+  }
 
   blastLeft.style.display = "block";
   blastLeft.style.top = bomb.offsetTop + "px";
   blastLeft.style.left = bomb.offsetLeft - 32 + "px";
   if (bomb.offsetTop == positionTop && bomb.offsetLeft - 32 == positionLeft){
   player.style.display = "none";
-  }
+  modal.style.display = "block";
 
+  }
 
   blastRight.style.display = "block";
   blastRight.style.top = bomb.offsetTop + "px";
   blastRight.style.left = bomb.offsetLeft + 32 + "px";
   if (bomb.offsetTop == positionTop && bomb.offsetLeft + 32 == positionLeft){
   player.style.display = "none";
+  modal.style.display = "block";
+
   }
 
 }
