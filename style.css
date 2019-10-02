@@ -1,0 +1,12 @@
+#boardgame {
+  height: 800px;
+  width: 800px;
+  background-color: black;
+  position: relative;
+}
+#player {
+  height: 32px;
+  width: 32px;
+  background-color: green;
+  position: absolute;
+}
