@@ -3,6 +3,7 @@
   width: 800px;
   background-color: black;
   position: relative;
+  overflow: hidden !important;
 }
 #player {
   height: 32px;
@@ -16,6 +17,8 @@
   background-color: orange;
   position: absolute;
   display: none;
+  z-index: 4;
+  border-radius: 75%;
 }
 .blast {
   height: 32px;
@@ -23,4 +26,12 @@
   background-color: red;
   position: absolute;
   display: none;
+  z-index: 5;
+}
+.enemies {
+  height: 32px;
+  width: 32px;
+  background-color: yellow;
+  position: absolute;
+  z-index: 3;
 }
