@@ -1,10 +1,21 @@
+// DEBUT DE LA GESTION DES COLLISIONS
+function isCollide(a, b) {
+  return !(
+    ((a.y + a.height) < (b.y)) ||
+    (a.y > (b.y + b.height)) ||
+    ((a.x + a.width) < b.x) ||
+    (a.x > (b.x + b.width))
+  );
+}
+
 var bomb = document.getElementById("bomb");
-var limitBomb = false;
 var blastCenter = document.getElementById("blastCenter");
 var blastTop = document.getElementById("blastTop");
 var blastBottom = document.getElementById("blastBottom");
 var blastLeft = document.getElementById("blastRight");
 var blastRight = document.getElementById("blastLeft");
+var limitBomb = false;
+var colision = false;
 document.addEventListener("keydown", dropBomb);
 
 function dropBomb(event) {
@@ -47,7 +58,16 @@ function bombBlast() {
   blastRight.style.display = "block";
   blastRight.style.top = bomb.offsetTop + "px";
   blastRight.style.left = bomb.offsetLeft + 32 + "px";
+
+  if (isCollide(blastCenter, player)){
+    colision = true;
+  }
+  if (colision == true){
+    player.style.display = "none";
+  }
+
 }
+
 function blastDisparition() {
   blastCenter.style.display = "none";
   blastTop.style.display = "none";
