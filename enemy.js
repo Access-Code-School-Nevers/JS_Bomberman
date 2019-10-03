@@ -1,7 +1,6 @@
 addEnemies();
 
 function addEnemies() {
-  console.log("dfgddfgf");
   for (var i = 0; i < 4; i++){
     var div = document.createElement('div');
     div.setAttribute('class', 'enemies');
