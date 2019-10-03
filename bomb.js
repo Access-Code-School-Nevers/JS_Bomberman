@@ -5,6 +5,10 @@ var blastBottom = document.getElementById("blastBottom");
 var blastLeft = document.getElementById("blastRight");
 var blastRight = document.getElementById("blastLeft");
 var limitBomb = false;
+console.log("dfgdf");
+var enemy0 = document.getElementById("enemy0");
+var enemy0Top = enemy0.offsetTop;
+var enemy0Left = enemy0.offsetLeft;
 
 document.addEventListener("keydown", dropBomb);
 
@@ -32,10 +36,12 @@ function bombBlast() {
   blastCenter.style.display = "block";
   blastCenter.style.top = bomb.offsetTop + "px";
   blastCenter.style.left = bomb.offsetLeft + "px";
-    if (bomb.offsetTop == positionTop && bomb.offsetLeft == positionLeft){
+  if (bomb.offsetTop == positionTop && bomb.offsetLeft == positionLeft){
     player.style.display = "none";
     modal.style.display = "block";
-
+  }
+  if (bomb.offsetTop == enemy0Top && bomb.offsetLeft == enemy0Left){
+    enemy0.style.display = "none";
   }
 
   blastTop.style.display = "block";
