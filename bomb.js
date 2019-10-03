@@ -60,14 +60,22 @@ function bombBlast() {
   else if (bomb.offsetTop == enemy3Top && bomb.offsetLeft == enemy3Left){
     enemy3.style.display = "none";
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9ed0adac939d2b279d0dc29574d43672842b1b2c
 
   blastTop.style.display = "block";
   blastTop.style.top = bomb.offsetTop - 32 + "px";
   blastTop.style.left = bomb.offsetLeft + "px";
   if (bomb.offsetTop - 32 == positionTop && bomb.offsetLeft == positionLeft){
+<<<<<<< HEAD
     player.style.display = "none";
     modal.style.display = "block";
+=======
+  player.style.display = "none";
+  modal.style.display = "block";
+>>>>>>> 9ed0adac939d2b279d0dc29574d43672842b1b2c
   }
   else if (bomb.offsetTop - 32 == enemy0Top && bomb.offsetLeft == enemy0Left){
     enemy0.style.display = "none";
@@ -78,7 +86,11 @@ function bombBlast() {
   else if (bomb.offsetTop - 32 == enemy2Top && bomb.offsetLeft == enemy2Left){
     enemy2.style.display = "none";
   }
+<<<<<<< HEAD
   else if (bomb.offsetTop - 32 == enemy3Top && bomb.offsetLeft == enem31Left){
+=======
+  else if (bomb.offsetTop - 32 == enemy3Top && bomb.offsetLeft == enemy3Left){
+>>>>>>> 9ed0adac939d2b279d0dc29574d43672842b1b2c
     enemy3.style.display = "none";
   }
 
@@ -141,7 +153,6 @@ function bombBlast() {
   else if (bomb.offsetTop == enemy3Top && bomb.offsetLeft + 32 == enemy3Left){
     enemy3.style.display = "none";
   }
-
 }
 
 function blastDisparition() {
