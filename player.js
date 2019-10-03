@@ -1,6 +1,7 @@
 var player = document.getElementById("player");
 var positionLeft = player.offsetLeft;
 var positionTop = player.offsetTop;
+
 document.addEventListener("keydown", movePlayer);
 
 function movePlayer(event) {
