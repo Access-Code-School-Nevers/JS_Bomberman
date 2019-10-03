@@ -4,10 +4,7 @@ function addEnemies() {
   for (var i = 0; i < 4; i++){
     var div = document.createElement('div');
     div.setAttribute('class', 'enemies');
-    var enemies = document.getElementsByClassName("enemies");
-    for (var j = 0; j < enemies.length; j++) {
-      div.setAttribute('id', 'enemy' + j);
-    }
+    div.setAttribute('id', 'enemy' + i);
     document.getElementById("board").appendChild(div);
     randomPos(div);
   }
