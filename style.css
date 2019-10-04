@@ -1,29 +1,45 @@
+.outside {
+  background-image: url("img/sciana.jpg");
+  background-size: 40px 40px;
+  height: 840px;
+  width: 840px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
 #board {
+  margin: auto;
   height: 800px;
   width: 800px;
-  background-color: black;
-  position: relative;
+  background-image: url("img/grass.jpg");
+  position: absolute;
   overflow: hidden !important;
 }
+
 #player {
   height: 32px;
   width: 32px;
-  background-color: green;
+  /* background-color: blue; */
+  background-image: url("img/zelda.png");
+  background-size: cover;
   position: absolute;
 }
 #bomb {
   height: 32px;
   width: 32px;
-  background-color: orange;
+  /* background-color: brown; */
+  background-image: url("img/chicken.png");
   position: absolute;
   display: none;
   z-index: 4;
   border-radius: 75%;
 }
+
 .blast {
   height: 32px;
   width: 32px;
-  background-color: red;
+  /* background-color: orange; */
+  background-image: url("img/explo.png");
   position: absolute;
   display: none;
   z-index: 5;
@@ -31,10 +47,22 @@
 .enemies {
   height: 32px;
   width: 32px;
-  background-color: yellow;
+  /* background-color: red; */
+  background-image: url("img/enemy.png");
+  background-size: 32px 32px;
   position: absolute;
   z-index: 3;
 }
+
+.wall {
+  height: 32px;
+  width: 32px;
+  /* background-color: brown; */
+  background-image: url("img/tree.png");
+  background-size: cover;
+  position: absolute;
+}
+
 
 /* The Modal (background) */
 .modal {
@@ -57,7 +85,7 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 500px;
 }
 
 /* The Close Button */
